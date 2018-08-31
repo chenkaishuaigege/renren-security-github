@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="io.renren.modules.mer.dao.CstInfDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="io.renren.modules.mer.entity.CstInfEntity" id="cstInfMap">
+        <result property="merCstNo" column="mer_cst_no"/>
+        <result property="merName" column="mer_name"/>
+        <result property="merNo" column="mer_no"/>
+        <result property="merLegalName" column="mer_legal_name"/>
+        <result property="merIdNumber" column="mer_id_number"/>
+        <result property="merPhone" column="mer_phone"/>
+        <result property="merProviceCity" column="mer_provice_city"/>
+        <result property="merAddress" column="mer_address"/>
+        <result property="merRemorkName" column="mer_remork_name"/>
+        <result property="merRemrk" column="mer_remrk"/>
+        <result property="merContactEmail" column="mer_contact_email"/>
+        <result property="merContactPhone" column="mer_contact_phone"/>
+        <result property="merContactQq" column="mer_contact_qq"/>
+        <result property="merContactWechat" column="mer_contact_wechat"/>
+        <result property="merCreateTime" column="mer_create_time"/>
+        <result property="merModifyTime" column="mer_modify_time"/>
+    </resultMap>
+
+
+</mapper>
