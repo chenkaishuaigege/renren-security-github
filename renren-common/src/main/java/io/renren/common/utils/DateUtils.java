@@ -173,4 +173,11 @@ public class DateUtils {
         DateTime dateTime = new DateTime(date);
         return dateTime.plusYears(years).toDate();
     }
+
+    public static void main(String[] args) {
+        Date date = new Date();
+        //SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        String sss = format(date, DATE_TIME_PATTERN);
+        System.out.println(sss);
+    }
 }

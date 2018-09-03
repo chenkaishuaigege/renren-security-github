@@ -17,12 +17,12 @@ var vm = new Vue({
     methods: {
         donate: function () {
             layer.open({
-                type: 2,
-                title: false,
-                area: ['806px', '467px'],
-                closeBtn: 1,
+                type: 1,
+                skin: 'layui-layer-molv',
+                title: "修改密码",
+                area: ['550px', '270px'],
                 shadeClose: false,
-                content: ['http://cdn.renren.io/donate.jpg', 'no']
+                content: jQuery("#passwordLayer")
             });
         }
     }

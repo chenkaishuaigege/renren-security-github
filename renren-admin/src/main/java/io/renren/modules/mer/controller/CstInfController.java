@@ -1,6 +1,7 @@
 package io.renren.modules.mer.controller;
 
 import java.util.Arrays;
+import java.util.Date;
 import java.util.Map;
 
 import io.renren.common.validator.ValidatorUtils;
@@ -61,8 +62,13 @@ public class CstInfController {
     @RequestMapping("/save")
     @RequiresPermissions("mer:cstinf:save")
     public R save(@RequestBody CstInfEntity cstInf){
+        System.out.println("商户信息录入");
+        //商户号生成
+        cstInf.setMerCstNo("M10000001");
+        //创建时间
+        Date date = new Date();
+        cstInf.setMerCreateTime(date);
         cstInfService.insert(cstInf);
-
         return R.ok();
     }
 

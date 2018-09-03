@@ -88,12 +88,12 @@ var vm = new Vue({
 		},
         donate: function () {
             layer.open({
-                type: 2,
-                title: false,
-                area: ['806px', '467px'],
-                closeBtn: 1,
+                type: 1,
+                skin: 'layui-layer-molv',
+                title: "联系总店--",
+                area: ['550px', '270px'],
                 shadeClose: false,
-                content: ['http://cdn.renren.io/donate.jpg', 'no']
+                content: jQuery("#passwordLayer")
             });
         }
 	},
